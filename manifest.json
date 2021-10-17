@@ -1,0 +1,22 @@
+{
+    "manifest_version": 2,
+    "name": "Youtube adblocker",
+    "description": "Youtube adblocker",
+    "version": "1.0.1",
+    "content_scripts": [
+        {
+            "js": [
+                "script.js"
+            ],
+            "run_at": "document_idle",
+            "matches": [
+                // "<all_urls>"
+                "*://*.youtube.com/*"
+            ]
+        }
+    ],
+    "permissions": [
+        "tabs",
+        "activeTab"
+    ]
+}
